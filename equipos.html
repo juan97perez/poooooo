@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipos</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+        th {text-align: center;}
+        td {text-align: center;}
+    </style>
+</head>
+<body>
+<table style="width:100%">
+    <tr>
+        <th colspan="3">Primera División<img src="data:image/png;base64,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"
+            alt="Logo Liga Santander" width=""/></th>
+    </tr>
+    <tr>
+        <th>Nombre</th>
+        <th>Escudo</th>
+        <th>Equipaciones</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Real Madrid</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj83eyg1_3sAhUSDWMBHVhRDX8QFjALegQIDBAD&url=https%3A%2F%2Fwww.realmadrid.com%2F&usg=AOvVaw3OjZdpkvHyndOAk-bz45pV" target="_blank"><img src="https://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/1.png"
+                                                                                              alt="Escudo Real Madrid CF" width="100"/></a></td>
+        <td>Blanca</td>
+
+
+    </tr>
+    <tr>
+        <td>Rosa</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">FC Barcelona</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiGws7h2f3sAhVGQUEAHXHSD8UQFjALegQIKhAC&url=https%3A%2F%2Fwww.fcbarcelona.es%2F&usg=AOvVaw3JQafBwGpRW92j0tSdCIvS" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+                                                                                                                                                                                                                                                                alt="Escudo FC Barcelona" width="100"/></a></td>
+        <td>Blaugrana</td>
+
+
+    </tr>
+    <tr>
+        <td>Amarilla</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">Atletico de Madrid</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjhz-7o3P3sAhWHFxQKHS34A7YQFjALegQIGhAC&url=https%3A%2F%2Fwww.atleticodemadrid.com%2F&usg=AOvVaw3R8mOshLPqitoEfdkINPfk" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/srAAE0bOnCppUrlbJpFiHQ_96x96.png"
+                                                                                                                                                                                                                                                                alt="Escudo Atletico de Madrid" width="100"/></a></td>
+        <td>Rojiblanca</td>
+
+
+    </tr>
+    <tr>
+        <td>Negra</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">Athletic de Bilbao</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjK_r-U3v3sAhWUQkEAHTvfDWAQFjALegQIOxAC&url=https%3A%2F%2Fwww.athletic-club.eus%2F&usg=AOvVaw0Gb9yWkU_X49IRZldFsid7" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/OSL_5Zm6kYPP1J17Bo5uDA_96x96.png"
+                                                                                                                                                                                                                                                                      alt="Escudo Athletic de Bilbao" width="100"/></a></td>
+        <td>Rojiblanca</td>
+
+    </tr>
+    <tr>
+        <td>Verde</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">Valencia CF</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjz9YGn3v3sAhWFYsAKHe8HDowQFjALegQIJxAC&url=https%3A%2F%2Fwww.valenciacf.com%2F&usg=AOvVaw2dalr2z-Jz-IY5gkqtbjRk" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/QPbjvDwI_0Wuu4tCS2O6uw_96x96.png"
+                                                                                                                                                                                                                                                                      alt="Escudo Valencia CF" width="100"/></a></td>
+        <td>Blanca</td>
+
+
+    </tr>
+    <tr>
+        <td>Negra</td>
+
+    </tr>
+
+</table>
+
+
+
+<p><a href="http://localhost:63342/P2-JuanManuelPerezRamirez/index.html?_ijt=4c13jvs5dkos8jfhre6u1466vi" target="_blank">Ir a inicio</a></p>
+
+
+
+<table style="width:100%">
+    <tr>
+        <th colspan="3">Segunda División<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/LaLiga_SmartBank.svg/1277px-LaLiga_SmartBank.svg.png"
+                                             alt="Logo Liga Segunda Division" width="60"/></th>
+    </tr>
+    <tr>
+        <th>Nombre</th>
+        <th>Escudo</th>
+        <th>Equipaciones</th>
+    </tr>
+    <tr>
+        <td rowspan="2">UD Almería</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjfm4fW5v3sAhUR6OAKHZvqBbwQFjALegQIGRAC&url=http%3A%2F%2Fwww.udalmeriasad.com%2F&usg=AOvVaw0259dysF1sRBprPb0K3sZ1" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/kt3Bf9IFcvWB2N3CN-N7Wg_96x96.png"
+                                                                                                                                                                                                                                                                alt="UD Almería" width="100"/></a></td>
+        <td>Rojiblanco</td>
+
+
+    </tr>
+    <tr>
+        <td>Azul</td>
+
+    </tr>
+
+
+    <tr>
+        <td rowspan="2">Real Zaragoza</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjc4ays5f3sAhUailwKHV1yBWgQFjABegQIFhAC&url=https%3A%2F%2Fwww.realzaragoza.com%2F&usg=AOvVaw2wqaeD39dPmDVxOD37fwn2" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/MgqEJPNiWx1geam4PyC52g_96x96.png"
+                                                        alt="Escudo Real Zaragoza" width="100"/></a></td>
+        <td>Blanca</td>
+
+
+    </tr>
+    <tr>
+        <td>Roja</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">Real Oviedo</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwih56XT5f3sAhUHXsAKHfn5DXcQFjALegQIGRAC&url=https%3A%2F%2Fwww.realoviedo.es%2F&usg=AOvVaw2H1xGxJekj-rkuw13MKVY0" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/2hbZVQulcYqiPFXkWDkB_g_96x96.png"
+                                                        alt="Escudo Real Oviedo" width="100"/></a></td>
+        <td>azul</td>
+
+
+    </tr>
+    <tr>
+        <td>amarilla</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">CD Tenerife</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjt1sjq5v3sAhWZD2MBHZpxArAQFjALegQIChAD&url=https%3A%2F%2Fwww.clubdeportivotenerife.es%2F&usg=AOvVaw1drVrR_sAg2SKOmXGfzcmO" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/YjLHUeUkgTpiB87kChIVOQ_96x96.png"
+                                                        alt="Escudo CD Tenerife" width="100"/></a></td>
+        <td>blanca</td>
+
+
+    </tr>
+    <tr>
+        <td>blanquiazul</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2">Real Sporting de Gijon</td>
+        <td rowspan="2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjB1ZP_5v3sAhURmRQKHUHkB7QQFjALegQIHBAC&url=https%3A%2F%2Fwww.realsporting.com%2F&usg=AOvVaw02qXAQ6fbWgu6khpEWZeuv" target="_blank"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/x6qk7V9aKp6DG-5sAbzFIA_96x96.png"
+                                                        alt="Escudo Real Sporting de Gijon" width="100"/></a></td>
+        <td>Rojiblanco</td>
+
+
+    </tr>
+    <tr>
+        <td>Negro</td>
+
+    </tr>
+
+
+</table>
+
+
+<p><a href="http://localhost:63342/P2-JuanManuelPerezRamirez/index.html?_ijt=4c13jvs5dkos8jfhre6u1466vi" target="_blank">Ir a inicio</a></p>
+
+</body>
+</html>
